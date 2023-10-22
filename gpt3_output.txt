@@ -1,0 +1,130 @@
+Loading pre-trained spanBERT from ./pretrained_spanbert
+Parameters:
+Client key      = xxxxx
+Engine key      = xxxxx
+OpenAI key      = xxxxx
+Method  =  gpt3
+Relation        = Work_For
+Threshold       = 0.7
+Query           = bill gates microsoft
+# of Tuples     = 10
+Loading necessary libraries; This should take a minute or so ...)
+=========== Iteration: 0 - Query: bill gates microsoft ===========
+
+
+URL ( 1 / 10): https://en.wikipedia.org/wiki/Bill_Gates
+        Fetching text from url ...
+        Trimming webpage content from 133862 to 10000 characters
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 85 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 85 sentences
+        Processed 10 / 85 sentences
+        Processed 15 / 85 sentences
+                === Extracted Relation ===
+                Sentence: Gates was fascinated by the machine and how it would always execute software code perfectly., and Gates's best friend and first business partner Kent Evans, for the summer after it caught them exploiting bugs in the operating system to obtain free computer time.
+                Subject: Gates ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Sentence: Gates was fascinated by the machine and how it would always execute software code perfectly., and Gates's best friend and first business partner Kent Evans, for the summer after it caught them exploiting bugs in the operating system to obtain free computer time.
+                Subject: Kent Evans ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 20 / 85 sentences
+                === Extracted Relation ===
+                Sentence: The following year, a Lakeside teacher enlisted Gates and Evans to automate the school's class-scheduling system, providing them computer time and royalties in return.
+                Subject: Gates ; Object: Lakeside ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Sentence: The following year, a Lakeside teacher enlisted Gates and Evans to automate the school's class-scheduling system, providing them computer time and royalties in return.
+                Subject: Evans ; Object: Lakeside ;
+                Adding to set of extracted relations
+                ==========
+
+
+                === Extracted Relation ===
+                Sentence: Gates then turned to Allen who helped him finish the system for Lakeside.
+                Subject: Gates ; Object: Lakeside ;
+                Duplicate. Ignoring this.
+                ==========
+                === Extracted Relation ===
+                Sentence: Gates then turned to Allen who helped him finish the system for Lakeside.
+                Subject: Allen ; Object: Lakeside ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 25 / 85 sentences
+        Processed 30 / 85 sentences
+                === Extracted Relation ===
+                Sentence: Years later, Ballmer succeeded Gates as Microsoft's CEO and maintained that position from 2000 until his resignation in 2014..
+                Subject: Bill Gates ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Sentence: Years later, Ballmer succeeded Gates as Microsoft's CEO and maintained that position from 2000 until his resignation in 2014..
+                Subject: Steve Ballmer ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 35 / 85 sentences
+        Processed 40 / 85 sentences
+        Processed 45 / 85 sentences
+                === Extracted Relation ===
+                Sentence: diagnosis, effectively ending the formal business partnership between Gates and Allen, which had been strained months prior due to a contentious dispute over Microsoft equity.
+                Subject: Gates ; Object: Microsoft ;
+                Duplicate. Ignoring this.
+                ==========
+                === Extracted Relation ===
+                Sentence: diagnosis, effectively ending the formal business partnership between Gates and Allen, which had been strained months prior due to a contentious dispute over Microsoft equity.
+                Subject: Allen ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 50 / 85 sentences
+                === Extracted Relation ===
+                Sentence: Although the two companies successfully developed the first version of the new system, the partnership deteriorated due to mounting creative differences., released one year after Gates stepped down as Microsoft CEO, was the first to not be based on DOS.
+                Subject: Bill Gates ; Object: Microsoft ;
+                Duplicate. Ignoring this.
+                ==========
+                === Extracted Relation ===
+                Sentence: Although the two companies successfully developed the first version of the new system, the partnership deteriorated due to mounting creative differences., released one year after Gates stepped down as Microsoft CEO, was the first to not be based on DOS.
+                Subject: Steve Ballmer ; Object: Microsoft ;
+                Duplicate. Ignoring this.
+                ==========
+
+        Processed 55 / 85 sentences
+                === Extracted Relation ===
+                Sentence: The process took two years to fully transfer his duties to Ozzie and Mundie, and was completed on June 27, 2008.Corbis Corp.. and some others on this and don't understand why some people are not concerned.. began..
+                Subject: Ozzie ; Object: Corbis Corp. ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Sentence: The process took two years to fully transfer his duties to Ozzie and Mundie, and was completed on June 27, 2008.Corbis Corp.. and some others on this and don't understand why some people are not concerned.. began..
+                Subject: Mundie ; Object: Corbis Corp. ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 60 / 85 sentences
+        Processed 65 / 85 sentences
+        Processed 70 / 85 sentences
+        Processed 75 / 85 sentences
+        Processed 80 / 85 sentences
+        Processed 85 / 85 sentences
+        Extracted annotations for  8  out of total  85  sentences
+        Relations extracted from this website: 10 (Overall: 14 )
+
+================== ALL RELATIONS for Work_For ( 10 ) =================
+Subject: Steve Ballmer          | Object: Microsoft
+Subject: Ozzie          | Object: Corbis Corp.
+Subject: Mundie          | Object: Corbis Corp.
+Subject: Kent Evans          | Object: Microsoft
+Subject: Gates          | Object: Microsoft
+Subject: Gates          | Object: Lakeside
+Subject: Evans          | Object: Lakeside
+Subject: Bill Gates          | Object: Microsoft
+Subject: Allen          | Object: Microsoft
+Subject: Allen          | Object: Lakeside
+Total # of iterations = 1

@@ -1,0 +1,141 @@
+Loading pre-trained spanBERT from ./pretrained_spanbert
+Parameters:
+Client key      = xxxxx
+Engine key      = xxxxx
+OpenAI key      = xxxxx
+Method  =  spanbert
+Relation        = Work_For
+Threshold       = 0.7
+Query           = bill gates microsoft
+# of Tuples     = 10
+Loading necessary libraries; This should take a minute or so ...)
+=========== Iteration: 0 - Query: bill gates microsoft ===========
+
+
+URL ( 1 / 10): https://en.wikipedia.org/wiki/Bill_Gates
+        Fetching text from url ...
+        Trimming webpage content from 133862 to 10000 characters
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 51 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 51 sentences
+        Processed 10 / 51 sentences
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.74848235 ; Subject: Bill GatesGates ; Object: U.S.EducationHarvard University(dropped ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.8972054 ; Subject: Henry Gates III ; Object: U.S.EducationHarvard University(dropped ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.9963921 ; Subject: 67)Seattle ; Object: U.S.EducationHarvard University(dropped ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.9969016 ; Subject: 67)Seattle ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.9975169 ; Subject: 67)Seattle ; Object: Bill & Melinda Gates ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.98045814 ; Subject: both)SpouseMelinda French ; Object: TerraPower Founder ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.98975414 ; Subject: 2021)Children3ParentsBill Gates Sr. ; Object: TerraPower Founder ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.99148864 ; Subject: both)SpouseMelinda French ; Object: Gates Ventures Technology ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.9925757 ; Subject: 2021)Children3ParentsBill Gates Sr. ; Object: Gates Ventures Technology ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.8970561 ; Subject: both)SpouseMelinda French ; Object: Microsoft[1 ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'GatesGates', 'in', '2018BornWilliam', 'Henry', 'Gates', 'III', '(', '1955', '-', '10', '-', '28', ')', 'October', '28', ',', '1955', '(', 'age', '67)Seattle', ',', 'Washington', ',', 'U.S.EducationHarvard', 'University(dropped', 'out)OccupationsBusinessmanphilanthropistinvestorwriterYears', 'active1972', '–', 'presentKnown', 'forCo', '-', 'founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'FoundationTitle', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co', '-', 'chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co', '-', 'founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft[1', ']', 'Board', 'member', 'ofBerkshire', 'HathawayMicrosoft(former', ',', 'both)SpouseMelinda', 'French', ' ', '(', 'm.', '1994', ';', 'div', '.', '2021)Children3ParentsBill', 'Gates', 'Sr', '.']
+                Output Confidence: 0.96154386 ; Subject: 2021)Children3ParentsBill Gates Sr. ; Object: Microsoft[1 ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 15 / 51 sentences
+                === Extracted Relation ===
+                Input tokens: ['He', 'is', 'a', 'co', '-', 'founder', 'of', 'Microsoft', ',', 'along', 'with', 'his', 'late', 'childhood', 'friend', 'Paul', 'Allen.[2][3', ']']
+                Output Confidence: 0.85648155 ; Subject: Paul Allen.[2][3 ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 20 / 51 sentences
+                === Extracted Relation ===
+                Input tokens: ['In', '1975', ',', 'he', 'and', 'Allen', 'founded', 'Microsoft', 'in', 'Albuquerque', ',', 'New', 'Mexico', '.']
+                Output Confidence: 0.98816776 ; Subject: Allen ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 25 / 51 sentences
+                === Extracted Relation ===
+                Input tokens: ['He', 'stepped', 'down', 'as', 'chairman', 'of', 'the', 'board', 'of', 'Microsoft', 'in', 'February', '2014', 'and', 'assumed', 'a', 'new', 'post', 'as', 'technology', 'adviser', 'to', 'support', 'the', 'newly', 'appointed', 'CEO', 'Satya', 'Nadella.[11', ']']
+                Output Confidence: 0.9970708 ; Subject: Satya ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+                === Extracted Relation ===
+                Input tokens: ['In', 'March', '2020', ',', 'Gates', 'left', 'his', 'board', 'positions', 'at', 'Microsoft', 'and', 'Berkshire', 'Hathaway', 'to', 'focus', 'on', 'his', 'philanthropic', 'efforts', 'on', 'climate', 'change', ',', 'global', 'health', 'and', 'development', ',', 'and', 'education.[12', ']']
+                Output Confidence: 0.7619361 ; Subject: Berkshire Hathaway ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['In', 'March', '2020', ',', 'Gates', 'left', 'his', 'board', 'positions', 'at', 'Microsoft', 'and', 'Berkshire', 'Hathaway', 'to', 'focus', 'on', 'his', 'philanthropic', 'efforts', 'on', 'climate', 'change', ',', 'global', 'health', 'and', 'development', ',', 'and', 'education.[12', ']']
+                Output Confidence: 0.73826635 ; Subject: Berkshire Hathaway ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 30 / 51 sentences
+                === Extracted Relation ===
+                Input tokens: ['In', 'October', '2017', ',', 'he', 'was', 'surpassed', 'by', 'Amazon', 'founder', 'and', 'CEO', 'Jeff', 'Bezos', ',', 'who', 'had', 'an', 'estimated', 'net', 'worth', 'of', 'US$', '90.6', 'billion', 'compared', 'to', 'Gates', "'s", 'net', 'worth', 'of', 'US$', '89.9', 'billion', 'at', 'the', 'time.[16', ']']
+                Output Confidence: 0.997047 ; Subject: Jeff Bezos ; Object: Amazon ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['In', 'October', '2017', ',', 'he', 'was', 'surpassed', 'by', 'Amazon', 'founder', 'and', 'CEO', 'Jeff', 'Bezos', ',', 'who', 'had', 'an', 'estimated', 'net', 'worth', 'of', 'US$', '90.6', 'billion', 'compared', 'to', 'Gates', "'s", 'net', 'worth', 'of', 'US$', '89.9', 'billion', 'at', 'the', 'time.[16', ']']
+                Output Confidence: 0.9872738 ; Subject: Jeff Bezos ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 35 / 51 sentences
+        Processed 40 / 51 sentences
+        Processed 45 / 51 sentences
+        Processed 50 / 51 sentences
+        Extracted annotations for  6  out of total  51  sentences
+        Relations extracted from this website: 18 (Overall: 18 )
+
+================== ALL RELATIONS for Work_For ( 18 ) =================
+Confidence: 0.99751687           | Subject: 67)Seattle           | Object: Bill & Melinda Gates
+Confidence: 0.99707079           | Subject: Satya           | Object: Microsoft
+Confidence: 0.99704701           | Subject: Jeff Bezos           | Object: Amazon
+Confidence: 0.99690157           | Subject: 67)Seattle           | Object: Microsoft
+Confidence: 0.99639207           | Subject: 67)Seattle           | Object: U.S.EducationHarvard University(dropped
+Confidence: 0.99257571           | Subject: 2021)Children3ParentsBill Gates Sr.           | Object: Gates Ventures Technology
+Confidence: 0.99148864           | Subject: both)SpouseMelinda French           | Object: Gates Ventures Technology
+Confidence: 0.98975414           | Subject: 2021)Children3ParentsBill Gates Sr.           | Object: TerraPower Founder
+Confidence: 0.98816776           | Subject: Allen           | Object: Microsoft
+Confidence: 0.98727381           | Subject: Jeff Bezos           | Object: Gates
+Total # of iterations = 1
